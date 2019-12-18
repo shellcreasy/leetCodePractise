@@ -45,5 +45,4 @@ public class TwoSum {
             System.out.println(nums[i]);
         }
     }
-
 }
