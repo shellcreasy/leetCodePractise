@@ -24,7 +24,7 @@ public class ReverseString {
      *
      * @param s
      */
-    public static void reverseString(char[] s) {
+    public void reverseString(char[] s) {
         for (int i = 0; i < s.length; i++) {
             char tmp = s[0];
             for (int j = 0; j < s.length - i; j++) {
@@ -33,14 +33,6 @@ public class ReverseString {
                 }
             }
             s[s.length - 1 - i] = tmp;
-        }
-    }
-
-    public static void main(String[] args) {
-        char[] str = {'H', 'a', 'n', 'n', 'a', 'h'};
-        reverseString(str);
-        for (int i = 0; i < str.length; i++) {
-            System.out.print(str[i]);
         }
     }
 }

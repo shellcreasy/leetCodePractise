@@ -26,7 +26,7 @@ public class LongestCommonPrefix {
      * @param strs
      * @return
      */
-    public static String longestCommonPrefix(String[] strs) {
+    public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {
             return "";
         }
@@ -55,10 +55,5 @@ public class LongestCommonPrefix {
             index++;
         }
         return "";
-    }
-
-    public static void main(String[] args) {
-        String[] strs = {};
-        System.out.println(longestCommonPrefix(strs));
     }
 }

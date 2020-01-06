@@ -27,7 +27,7 @@ public class RemoveDuplicates {
      * @param nums
      * @return
      */
-    public static int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] nums) {
         if (nums.length <= 1) {
             return nums.length;
         } else {
@@ -52,11 +52,5 @@ public class RemoveDuplicates {
             }
             return startIndex + 1;
         }
-    }
-
-    public static void main(String[] args) {
-        int[] input = {2147483647, 2147483647, 2147483647, 2147483647};
-        int result = removeDuplicates(input);
-        System.out.println(result);
     }
 }

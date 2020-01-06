@@ -22,12 +22,7 @@ public class StrStr {
      * @param needle
      * @return
      */
-    public static int strStr(String haystack, String needle) {
+    public int strStr(String haystack, String needle) {
         return haystack.indexOf(needle);
-    }
-
-    public static void main(String[] args) {
-        String haystack = "hello", needle = "";
-        System.out.println(strStr(haystack, needle));
     }
 }

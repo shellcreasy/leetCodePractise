@@ -36,7 +36,7 @@ public class RotateMatrix {
      *
      * @param matrix
      */
-    public static void rotate(int[][] matrix) {
+    public void rotate(int[][] matrix) {
         Map<Integer, List<Integer>> columnMap = new HashMap<>(16);
         for (int i = 0; i < matrix.length; i++) {
             List<Integer> list = new ArrayList<>(16);
@@ -52,25 +52,6 @@ public class RotateMatrix {
                 if (index >= 0) {
                     matrix[i][j] = columnMap.get(index).get(i);
                     index--;
-                }
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        int[][] matrix = {
-                {5, 1, 9, 11},
-                {2, 4, 8, 10},
-                {13, 3, 6, 7},
-                {15, 14, 12, 16}
-        };
-        rotate(matrix);
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (j != matrix[i].length - 1) {
-                    System.out.print(matrix[i][j] + "-");
-                } else {
-                    System.out.println(matrix[i][j]);
                 }
             }
         }

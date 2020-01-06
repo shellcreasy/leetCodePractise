@@ -40,7 +40,7 @@ public class IsValidSudoku {
      * @param board
      * @return
      */
-    public static boolean isValidSudoku(char[][] board) {
+    public boolean isValidSudoku(char[][] board) {
         boolean result = true;
 
         Map<Integer, Set<Character>> columnMap = new HashMap<>(16);
@@ -81,20 +81,5 @@ public class IsValidSudoku {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        char[][] board = {
-                {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
-        boolean result = isValidSudoku(board);
-        System.out.print(result);
     }
 }

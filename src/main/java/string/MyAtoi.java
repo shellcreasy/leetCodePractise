@@ -54,7 +54,7 @@ public class MyAtoi {
      * @param str
      * @return
      */
-    public static int myAtoi(String str) {
+    public int myAtoi(String str) {
         StringBuilder stb = new StringBuilder("");
         //整数的正则表达式
         String intRegex = "^-[1-9]\\d*|\\d+$";
@@ -99,10 +99,5 @@ public class MyAtoi {
             return Integer.valueOf(stb.toString());
         }
         return 0;
-    }
-
-    public static void main(String[] args) {
-        String str = " +9";
-        System.out.println(myAtoi(str));
     }
 }

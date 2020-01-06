@@ -17,7 +17,7 @@ public class MoveZeroes {
      *
      * @param nums
      */
-    public static void moveZeroes(int[] nums) {
+    public void moveZeroes(int[] nums) {
         List<Integer> tmpList = new ArrayList<Integer>(16);
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
@@ -31,14 +31,5 @@ public class MoveZeroes {
                 nums[i] = 0;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {0, 1, 0, 3, 12};
-        moveZeroes(nums);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]);
-        }
-
     }
 }

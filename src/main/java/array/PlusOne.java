@@ -21,7 +21,7 @@ public class PlusOne {
      * @param digits
      * @return
      */
-    public static int[] plusOne(int[] digits) {
+    public int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {
             if (0 <= digits[i] && digits[i] < 9 && i == digits.length - 1) {
                 digits[digits.length - 1] = digits[digits.length - 1] + 1;
@@ -48,13 +48,5 @@ public class PlusOne {
             }
         }
         return digits;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {9, 9, 9, 9};
-        nums = plusOne(nums);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i]);
-        }
     }
 }

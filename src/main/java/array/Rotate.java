@@ -20,7 +20,7 @@ public class Rotate {
      * @param k
      * @return
      */
-    public static int[] rotate(int[] nums, int k) {
+    public int[] rotate(int[] nums, int k) {
         if (k > 0 && nums.length > 1) {
             int tmp = 0;
             if (nums.length != 2) {
@@ -45,13 +45,5 @@ public class Rotate {
             rotate(nums, k);
         }
         return nums;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {-1, -100, 3, 99};
-        int[] result = rotate(nums, 2);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
-        }
     }
 }

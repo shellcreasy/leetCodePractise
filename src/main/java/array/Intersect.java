@@ -24,7 +24,7 @@ public class Intersect {
      * @param nums2
      * @return
      */
-    public static int[] intersect(int[] nums1, int[] nums2) {
+    public int[] intersect(int[] nums1, int[] nums2) {
         List<Integer> numList1 = new ArrayList<>(16);
         List<Integer> numList2 = new ArrayList<>(16);
         List<Integer> numList3 = new ArrayList<>(16);
@@ -56,14 +56,5 @@ public class Intersect {
         }
 
         return resultArray;
-    }
-
-    public static void main(String[] args) {
-        int[] nums1 = {4, 9, 5};
-        int[] nums2 = {9, 4, 9, 8, 4};
-        int[] result = intersect(nums1, nums2);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
-        }
     }
 }

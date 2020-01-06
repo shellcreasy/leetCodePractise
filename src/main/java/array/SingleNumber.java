@@ -17,7 +17,7 @@ public class SingleNumber {
      * @param nums
      * @return
      */
-    public static int singleNumber(int[] nums) {
+    public int singleNumber(int[] nums) {
         Set<Integer> numSet = new HashSet<Integer>(16);
         for (int i = 0; i < nums.length; i++) {
             if (!numSet.contains(nums[i])) {
@@ -27,10 +27,5 @@ public class SingleNumber {
             }
         }
         return numSet.iterator().next();
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {4, 1, 2, 1, 2};
-        System.out.print(singleNumber(nums));
     }
 }

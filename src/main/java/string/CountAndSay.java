@@ -34,7 +34,7 @@ public class CountAndSay {
      * @param n
      * @return
      */
-    public static String countAndSay(int n) {
+    public String countAndSay(int n) {
         if (n > 30) {
             return "";
         }
@@ -59,10 +59,5 @@ public class CountAndSay {
             count++;
         }
         return initStr;
-    }
-
-    public static void main(String[] args) {
-        int num = 8;
-        System.out.println(countAndSay(num));
     }
 }

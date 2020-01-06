@@ -22,7 +22,7 @@ public class ArrayRelativeSort {
      * @param arr2
      * @return
      */
-    public static int[] relativeSortArray(int[] arr1, int[] arr2) {
+    public int[] relativeSortArray(int[] arr1, int[] arr2) {
         //返回结果数组初始化
         int[] resultArray = new int[arr1.length];
         for (int i = 0; i < resultArray.length; i++) {
@@ -87,14 +87,5 @@ public class ArrayRelativeSort {
         }
 
         return resultArray;
-    }
-
-    public static void main(String[] args) {
-        int[] arr1 = {2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19};
-        int[] arr2 = {2, 1, 4, 3, 9, 6};
-        int[] result = relativeSortArray(arr1, arr2);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
-        }
     }
 }

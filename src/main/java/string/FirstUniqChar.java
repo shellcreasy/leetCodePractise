@@ -18,7 +18,7 @@ public class FirstUniqChar {
      * @param s
      * @return
      */
-    public static int firstUniqChar(String s) {
+    public int firstUniqChar(String s) {
         for (int i = 0; i < s.length(); i++) {
             boolean isDuplacte = false;
             for (int j = 0; j < s.length(); j++) {
@@ -34,10 +34,5 @@ public class FirstUniqChar {
             }
         }
         return -1;
-    }
-
-    public static void main(String[] args) {
-        String s = "loveleetcode";
-        System.out.print(firstUniqChar(s));
     }
 }

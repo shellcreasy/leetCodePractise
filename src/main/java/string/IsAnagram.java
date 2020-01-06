@@ -20,7 +20,7 @@ public class IsAnagram {
      * @param t
      * @return
      */
-    public static boolean isAnagram(String s, String t) {
+    public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         } else {
@@ -50,10 +50,5 @@ public class IsAnagram {
             }
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-        String s = "anagram", t = "nagaram";
-        System.out.println(isAnagram(s, t));
     }
 }

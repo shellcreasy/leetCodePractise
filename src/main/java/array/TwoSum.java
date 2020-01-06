@@ -15,7 +15,7 @@ public class TwoSum {
      * @param target
      * @return
      */
-    public static int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         Set<Integer> numSet = new LinkedHashSet<Integer>(16);
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
@@ -36,13 +36,5 @@ public class TwoSum {
             index++;
         }
         return nums1;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
-        nums = twoSum(nums, 9);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]);
-        }
     }
 }

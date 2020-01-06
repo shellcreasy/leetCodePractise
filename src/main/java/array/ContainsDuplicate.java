@@ -16,7 +16,7 @@ public class ContainsDuplicate {
      * @param nums
      * @return
      */
-    public static boolean containsDuplicate(int[] nums) {
+    public boolean containsDuplicate(int[] nums) {
         boolean isContains = false;
         Set<Integer> numSet = new HashSet<Integer>();
         for (int i = 0; i < nums.length; i++) {
@@ -25,10 +25,5 @@ public class ContainsDuplicate {
             }
         }
         return isContains;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
-        System.out.print(containsDuplicate(nums));
     }
 }

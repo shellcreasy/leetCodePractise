@@ -21,7 +21,7 @@ public class IsPalindrome {
      * @param s
      * @return
      */
-    public static boolean isPalindrome(String s) {
+    public boolean isPalindrome(String s) {
         String regex = "^[a-z0-9]+$";
         s = s.toLowerCase();
         StringBuilder forStb = new StringBuilder();
@@ -42,10 +42,5 @@ public class IsPalindrome {
             return true;
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-        String str = "race a car";
-        System.out.println(isPalindrome(str));
     }
 }

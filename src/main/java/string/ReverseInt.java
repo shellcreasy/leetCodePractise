@@ -23,7 +23,7 @@ public class ReverseInt {
      * @param x
      * @return
      */
-    public static int reverse(int x) {
+    public int reverse(int x) {
         String s = String.valueOf(x);
         StringBuilder stb = new StringBuilder();
         Long result;
@@ -44,10 +44,5 @@ public class ReverseInt {
             return 0;
         }
         return Integer.valueOf(result.toString());
-    }
-
-    public static void main(String[] args) {
-        int x = 123;
-        System.out.print(reverse(x));
     }
 }
